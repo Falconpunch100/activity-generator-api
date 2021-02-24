@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia Questions</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Welcome to the Activity Generator app!</h1>
+            <h4><p>To use this app, open your console, type "node --experimental-modules index.js" and answer the questions. You will be given a list of possible activities as well as open a trivia game that lasts for as long as you wish.</p></h3>
+        </section>
+        <section id="activity-list">
+            <ul id="list">
+                <li>Shop at support your local farmers market</li>
+                <li>Listen to a new music genre</li>
+                <li>Give your pet ten minutes of focused attention</li>
+                <li>Plan a vacation you've always wanted to take</li>
+                <li>Learn the periodic table</li>
+
+            </ul>
+        </section>
+        <section id="trivia-questions">
+            <header id="statbar">
+                <div><span id="score">0</span> points</div>
+            </header>
+            <p id="correct-answer">The correct answer is: </p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    let triviaArray = [{ "category": "Entertainment: Video Games", "type": "multiple", "difficulty": "medium", "question": "What name did &quot;Mario&quot;, from &quot;Super Mario Brothers&quot;, originally have?", "correct_answer": "Ossan", "incorrect_answers": ["Jumpman", "Mr. Video", "Mario"] }, { "category": "Entertainment: Video Games", "type": "multiple", "difficulty": "easy", "question": "Who created the digital distribution platform Steam?", "correct_answer": "Valve", "incorrect_answers": ["Pixeltail Games", "Ubisoft", "Electronic Arts"] }, { "category": "Entertainment: Film", "type": "multiple", "difficulty": "easy", "question": "This movie contains the quote, &quot;Nobody puts Baby in a corner.&quot;", "correct_answer": "Dirty Dancing", "incorrect_answers": ["Three Men and a Baby", "Ferris Bueller&#039;s Day Off", "Pretty in Pink"] }, { "category": "Entertainment: Video Games", "type": "multiple", "difficulty": "easy", "question": "What is the main ship used by Commander Shepard in the Mass Effect Franchise called?", "correct_answer": "Normandy", "incorrect_answers": ["Osiris", "Infinity", "Endeavour"] }, { "category": "Entertainment: Video Games", "type": "multiple", "difficulty": "medium", "question": "How many classes are there in Team Fortress 2?", "correct_answer": "9", "incorrect_answers": ["10", "8", "7"] }, { "category": "Animals", "type": "multiple", "difficulty": "easy", "question": "What do you call a baby bat?", "correct_answer": "Pup", "incorrect_answers": ["Cub", "Chick", "Kid"] }, { "category": "General Knowledge", "type": "boolean", "difficulty": "medium", "question": "Sitting for more than three hours a day can cut two years off a person&#039;s life expectancy.", "correct_answer": "True", "incorrect_answers": ["False"] }, { "category": "Entertainment: Television", "type": "multiple", "difficulty": "easy", "question": "In the Star Trek universe, what color is Vulcan blood?", "correct_answer": "Green", "incorrect_answers": ["Blue", "Red", "Purple"] }, { "category": "Entertainment: Japanese Anime & Manga", "type": "boolean", "difficulty": "hard", "question": "Throughout the entirety of &quot;Dragon Ball Z&quot;, Goku only kills two characters: a miniboss named Yakon and Kid Buu.", "correct_answer": "True", "incorrect_answers": ["False"] }, { "category": "Geography", "type": "multiple", "difficulty": "hard", "question": "What is Canada&#039;s largest island?", "correct_answer": "Baffin Island", "incorrect_answers": ["Prince Edward Island", "Vancouver Island", "Newfoundland"] }, { "category": "Entertainment: Music", "type": "multiple", "difficulty": "easy", "question": "What album did The Lumineers release in 2016?", "correct_answer": "Cleopatra", "incorrect_answers": ["Winter", "The Lumineers", "Tracks From The Attic"] }, { "category": "Entertainment: Television", "type": "boolean", "difficulty": "easy", "question": "Klingons express emotion in art through opera and poetry.", "correct_answer": "True", "incorrect_answers": ["False"] }, { "category": "Entertainment: Music", "type": "multiple", "difficulty": "medium", "question": "Who was the lead singer and frontman of rock band R.E.M?", "correct_answer": "Michael Stipe", "incorrect_answers": ["Chris Martin", "Thom Yorke", "George Michael"] }, { "category": "General Knowledge", "type": "multiple", "difficulty": "medium", "question": "Where did the pineapple plant originate?", "correct_answer": "South America", "incorrect_answers": ["Hawaii", "Europe", "Asia"] }, { "category": "Entertainment: Video Games", "type": "multiple", "difficulty": "medium", "question": "In Kingdom Hearts which of the following people can NOT wield a keyblade?", "correct_answer": "Larxene", "incorrect_answers": ["Xehanort", "Lea", "Mickey"] }, { "category": "History", "type": "multiple", "difficulty": "hard", "question": "From 1940 to 1942, what was the capital-in-exile of Free France ?", "correct_answer": "Brazzaville", "incorrect_answers": ["Algiers", "Paris", "Tunis"] }, { "category": "Entertainment: Television", "type": "multiple", "difficulty": "hard", "question": "Which actor from The Young Ones also played Lord Flashheart in one episode of Blackadder II?", "correct_answer": "Rik Mayall", "incorrect_answers": ["Adrian Edmondson", "Nigel Planer", "Christopher Ryan"] }, { "category": "Entertainment: Television", "type": "multiple", "difficulty": "hard", "question": "Which of these Nickelodeon game shows aired first?", "correct_answer": "Double Dare", "incorrect_answers": ["Nick Arcade", "Finders Keepers", "Nickelodeon Guts"] }, { "category": "Entertainment: Television", "type": "multiple", "difficulty": "medium", "question": "What actor portrays Hogan &quot;Wash&quot; Washburne in the TV Show Firefly?", "correct_answer": "Alan Tudyk", "incorrect_answers": ["Adam Baldwin", "Nathan Fillion", "Sean Maher"] }, { "category": "Geography", "type": "multiple", "difficulty": "medium", "question": "The Pyrenees mountains are located on the border of which two countries?", "correct_answer": "France and Spain", "incorrect_answers": ["Italy and Switzerland", "Norway and Sweden", "Russia and Ukraine"] }]
+</script>
+<script src="game.js"></script>
+
+</html>

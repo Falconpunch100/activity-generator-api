@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background: rgb(80, 141, 255);
+background: linear-gradient(90deg, rgba(80,220,255,1) 0%, rgba(185,255,188,1) 50%, rgba(80,220,255,1) 100%);
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#activity-list {
+    margin: 30px;
+    border: rgb(0, 93, 121) 2px solid;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(139, 199, 255, 0.50);
+    border-radius: 25px;
+    width: 35%;
+}
+
+#trivia-questions {
+    border-radius: 25px;
+    border: rgb(0, 93, 121) 2px solid;
+    background-color: rgba(139, 199, 255, 0.50);
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#trivia-questions h2 {
+    font-size: 40px;
+}
+
+#intro {
+    color:rgb(0, 58, 25);
+}
+
+#list {
+    list-style-type: none;
+    height: 100%;
+
+}
+
+#list li {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#play {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#answerArray {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    place-items: center;
+    width: 60%;
+    padding: 20px;
+}
+
+.answer {
+    padding: 10px;
+    width: 60%;
+    cursor: pointer;
+    background-color: rgba(0, 4, 255, 0.253);
+    transition: background-color 100ms;
+    border-radius: 10px;
+    animation: fade 500ms ease-out;
+}
+
+.answer:hover {
+    background-color: rgba(0, 162, 255, 0.253);
+    transition: background-color 100ms;
+}
+
+#statbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#correct-answer {
+    display: none;
+    padding-bottom: 10px;
+}
+
+#statbar {
+    padding-top: 10px;
+}
+
+#quest {
+    animation: zoom 500ms ease;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform:scale(0)
+    }
+    to {
+        transform:scale(1)
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #trivia-questions {
+        width: auto;
+        font-size: 15px;
+        background-color:transparent;
+        border: none;
+        
+    }
+    .answer {
+        padding: 10px;
+        width: 90%;
+    }
+
+    #answerArray {
+        width: 100%;
+        padding: 5px;
+    }
+    #activity-list {
+        font-size: 17px;
+        width: 80%
+    }
+}
